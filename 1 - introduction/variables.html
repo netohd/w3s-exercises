@@ -25,32 +25,36 @@
       margin: 100px;
     }
   </style>
+</head>
 
-  <head>
+<body>
+  <h1>MEU CURRÍCULO</h1>
+  <div id="areaResumo">
+    <p>
+      Olá! Meu nome é Antônio (pode me chamar de Toni), tenho 26 anos e sou desenvolvedor full stack, com ênfase no
+      front end e entusiasta das tecnologias derivadas do JavaScript. Tenho boa performance na resolução de problemas
+      com um nível maior de complexidade, também tenho facilidade para me comunicar e aprender novas tecnologias.
+      Minhas
+      principais competências são: JavaScript/Typescript, React.js, Node.js, Express, styled-components, Sass,
+      Bootstrap, Java, Python, MySQL, Git, AWS, Clean Code, CI/CD com Jenkins e CodePipeline, Metodologias Ágeis,
+      desenvolvimento de APIs RESTful. Mesmo digitando igual bobo aqui eu vou testando e boas pow
+    </p>
+  </div>
 
-  <body>
-    <h1>MEU CURRÍCULO</h1>
-    <div id="areaResumo">
-      <p>
-        Olá! Meu nome é Antônio (pode me chamar de Toni), tenho 26 anos e sou desenvolvedor full stack, com ênfase no
-        front end e entusiasta das tecnologias derivadas do JavaScript. Tenho boa performance na resolução de problemas
-        com um nível maior de complexidade, também tenho facilidade para me comunicar e aprender novas tecnologias.
-        Minhas
-        principais competências são: JavaScript/Typescript, React.js, Node.js, Express, styled-components, Sass,
-        Bootstrap, Java, Python, MySQL, Git, AWS, Clean Code, CI/CD com Jenkins e CodePipeline, Metodologias Ágeis,
-        desenvolvimento de APIs RESTful. Mesmo digitando igual bobo aqui eu vou testando e boas pow
-      </p>
-    </div>
+  <script>
 
-    <script>
+    function mudaResumo() {
+      // Variavel let foi introduzida no ES6 e o JS passou a aceitar escopo de bloco 
+      // (antes escopo era só global e function) - var pode ser redecladarada, let não
 
-      function mudaResumo() {
-        // const adress = "Rua Carlos Weli Preisser"
-        document.getElementById("areaResumo").innerHTML = "chamou a função! :)"
-      }
+      // const thanks = "Obrigado por me contratar!!"
+      // var thanks = "Obrigado por me contratar!!"
+      let thanks = "Obrigado por me contratar!!"
+      document.getElementById("areaResumo").innerHTML = thanks
+    }
 
-    </script>
-    <button type="button" onClick="mudaResumo()">Clique aqui</button>
-  </body>
+  </script>
+  <button type="button" onClick="mudaResumo()">Me contrate</button>
+</body>
 
 </html>
