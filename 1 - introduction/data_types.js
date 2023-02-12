@@ -32,13 +32,8 @@ function criaPessoa(nome, idade, altura, trabalha, linguagens, endereço) {
     trabalha: trabalha,
     linguagens: linguagens,
     endereço: endereço
-  }  
+  }
   console.log(pessoa)
 }
 
-criaPessoa("Antonio", 26, 1.75, true, ["js", "java", "python"],
-{
-rua: "João Pinheiro", 
-numero: 12, 
-bairro: "Centro"
-})
+criaPessoa("Antonio", 26, 1.75, true, ["js", "java", "python"], {rua: "João Pinheiro", numero: 12, bairro: "Centro"})
