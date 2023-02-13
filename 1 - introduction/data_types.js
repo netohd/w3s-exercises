@@ -14,7 +14,9 @@ Date e array são considerados subtipos de objeto
 */
 
 let _$texto = "Lorem ipsun"
-let vetor = [_$texto, "Nada", "Texto com 'aspas' aninhada"]
+let vetor = [_$texto, "Nada", "Texto com 'aspas' aninhada", 25]
+
+console.log(vetor)
 
 // Os tipos não são passados como parâmetro nas funções
 function criaPessoa(nome, idade, altura, trabalha, linguagens, endereço) {

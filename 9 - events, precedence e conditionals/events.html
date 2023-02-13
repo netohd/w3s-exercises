@@ -1,0 +1,34 @@
+<!-- 
+
+No HTML: <element event='código javascript'>
+exemplo: <button onClick='executaFuncao()'></button>
+
+Event	        Description
+onchange	    An HTML element has been changed
+onclick	      The user clicks an HTML element
+onmouseover	  The user moves the mouse over an HTML element
+onmouseout	  The user moves the mouse away from an HTML element
+onkeydown	    The user pushes a keyboard key
+onload	      The browser has finished loading the page
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="demo">
+
+  </div>
+
+  <button onclick="this.innerHTML = Date()">The time is? (here)</button>
+  <button onclick="document.getElementById('demo').innerHTML = Date()">The time is? (div)</button>
+</body>
+
+</html>
