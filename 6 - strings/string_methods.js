@@ -32,5 +32,4 @@ console.log(text);
 
 // Remove espaço dos lados (existe trimStart e trimEnd)
 let text1 = "      Hello World!      ";
-let text2 = text1.trim();
-console.log(text2)
+console.log(text1.trim())
