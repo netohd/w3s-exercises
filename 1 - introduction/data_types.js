@@ -13,16 +13,10 @@ Existem 8 tipos possíveis em JavaScript:
 Date e array são considerados subtipos de objeto
 */
 
-const carro = {
-  marca,
-  ano,
+let _$texto = "Lorem ipsun"
+let vetor = [_$texto, "Nada", "Texto com 'aspas' aninhada"]
 
-  calculaIdade: function teste() {
-    return 2023 - this.ano
-  }
-}
-
-
+// Os tipos não são passados como parâmetro nas funções
 function criaPessoa(nome, idade, altura, trabalha, linguagens, endereço) {
   let pessoa = {
     nome: nome,
