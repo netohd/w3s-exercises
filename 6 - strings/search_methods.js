@@ -5,8 +5,8 @@ String lastIndexOf()
 String search()
 String match()
 String matchAll()
-String includes()
-String startsWith()
+String includes() - retorna true se contém o valor
+String startsWith() - retorna true se inicia com o valor
 String endsWith()
 
 */
