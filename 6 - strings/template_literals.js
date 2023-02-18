@@ -1,6 +1,6 @@
 let nome = "Antonio"
 
-// Uso de `` permite a quebra de linha
+// Uso de `` permite a quebra de linha na string
 let text =
 `The quick
 brown ${nome} fox
