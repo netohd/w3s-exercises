@@ -6,7 +6,7 @@ const eventEmitter = new EventEmitter();
 // e no segundo parâmetro é definida uma função callback
 // que pode receber argumentos
 eventEmitter.on('printWord', (word) => {
-  console.log('A palavra é ' + word)
+  console.log('A palavra informada é ' + word)
 })
 
 // Já no método emit, o primeiro parâmetro corresponde
