@@ -12,5 +12,5 @@ baixaArquivoDaNet('www.megaupload.com/videoLegal', function enviaArquivo() {
 })
 
 // Isso é o ponto principal, o fluxo do programa continua
-// acontecendo
+// acontecendo, útil em diversas situações
 console.log("Programa continua aqui")
