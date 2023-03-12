@@ -5,7 +5,12 @@ const nome = 'Maria'; // Aqui antes da IIFE tem que ter o ; se não dá erro
 
 (function() {
   const nome = 'Antonio'
-  console.log(nome)
+  
+  function falaOiNome() {
+    console.log(`Oi ${nome}!`)
+  }
+
+  falaOiNome(nome)
 })()
 
 console.log(nome)
