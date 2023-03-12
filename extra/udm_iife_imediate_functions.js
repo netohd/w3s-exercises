@@ -9,7 +9,7 @@ const nome = 'Maria'; // Aqui antes da IIFE tem que ter o ; se não dá erro
   function falaOiNome() {
     console.log(`Oi ${nome}!`)
   }
-
+  // Considera variável nome dentro do bloco
   falaOiNome(nome)
 })()
 
