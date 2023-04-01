@@ -2,15 +2,15 @@
 // https://api.github.com/users/${username}/repos
 
 async function searchUser(user) {
-  await fetch(`https://api.github.com/users/${user}`)
-    .then(response => {
-      return (response.json())
-    })
-    .catch(e => console.log(e, '------ Error ------'))
+  // O fetch tbm é uma promise (permite then catch e finally, portanto precisa de uma variável)
+  // para receber seu retorno
+  const data = await fetch(`https://api.github.com/users/${user}`).then(response => { return response.json() })
+  return data
 }
 
 async function main() {
-  await console.log(searchUser('netohd'))
+  const data = await searchUser('netohd')
+  console.log(data, 'data here')
   console.log('teste')
 }
 

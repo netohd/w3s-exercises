@@ -4,7 +4,7 @@
         {
             "type": "node",
             "request": "launch",
-            "runtimeVersion": "19.8.1",
+            "runtimeVersion": "19.8",
             "name": "Launch Program",
             "skipFiles": [
                 "<node_internals>/**"
