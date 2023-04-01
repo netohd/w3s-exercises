@@ -1,19 +1,17 @@
 // https://api.github.com/users/${username}
 // https://api.github.com/users/${username}/repos
 
-const searchUser = new Promise(res => {
-  fetch(`https://api.github.com/users/netohd`)
+async function searchUser(user) {
+  await fetch(`https://api.github.com/users/${user}`)
     .then(response => {
-      res(response.json)
+      return (response.json())
     })
-})
+    .catch(e => console.log(e, '------ Error ------'))
+}
 
 async function main() {
-  searchUser.then(response => {
-    console.log(response)
-    console.log('teste')
-  }
-  )
+  await console.log(searchUser('netohd'))
+  console.log('teste')
 }
 
 main()
