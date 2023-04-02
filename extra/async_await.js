@@ -26,7 +26,7 @@ async function forEachTest() {
     currentElement = await fetch(`https://api.github.com/users/${element}`)
     .then(response => { 
       return response.json() })
-      
+
     allElements.push(currentElement)
   });
 
@@ -35,5 +35,4 @@ async function forEachTest() {
 }
 
 console.log(forEachTest())
-
 // main()
