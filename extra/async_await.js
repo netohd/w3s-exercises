@@ -23,8 +23,8 @@ async function forEachTest() {
   console.log(artists[50], 'artist')
   const allElements = []
   allElements.push({ nome: 'Antonio' })
-  
-  // [N]ao funciona] => artists.forEach(async element => {
+
+  // [Não funciona] => artists.forEach(async element => {
   // Explicação: forEach é um loop que não espera chamadas
   // assíncronas. Solução: for of
   for (let element of artists ) {
