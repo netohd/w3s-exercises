@@ -22,26 +22,24 @@ async function main() {
 }
 
 async function forEachTest() {
-  
-  // const arrTest = ['netohd','antonio','carlos','joao']
   const artists = await prisma.artist.findMany()
   console.log(artists[50], 'artists')
   const allElements = []
-  const index = 0
 
-  artists.forEach( async element => {
-    const currentElement = await prisma.user.findUnique({
+  artists.forEach(async element => {
+    let currentElement = await prisma.customer.findUnique({
       where: {
-        id: index,
+        CustomerId: element.ArtistId,
       },
     })
-    index++
     allElements.push(currentElement)
   });
+
 
   return allElements
   
 }
 
-forEachTest()
+const result = forEachTest()
+console.log(result, 'result here')
 // main()
