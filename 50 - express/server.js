@@ -18,11 +18,11 @@ app.get('/', (req, res) => {
     `)
 })
 
-app.get('/testes/:valor?/:segundo?', (req, res) => {
+app.get('/testes/:primeiro?/:segundo?', (req, res) => {
     console.log(req.params, 'params here')
     console.log(req.query, 'query here')
-    // res.send(200, req.params)
-    res.send(200, req.query)
+    // res.status(200).send(req.query)
+    res.status(200).send(req.params)
 })
 
 app.post('/', (req, res) => {
@@ -30,5 +30,5 @@ app.post('/', (req, res) => {
 })
 
 app.listen(3000, () => {
-    console.log('Servidor rodando na prota 3000')
+    console.log('Servidor rodando na prota 3000...')
 })
