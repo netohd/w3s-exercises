@@ -26,7 +26,7 @@ app.get('/testes/:primeiro?/:segundo?', (req, res) => {
 })
 
 app.post('/', (req, res) => {
-    console.log(req.body.cep, 'cep here')
+    console.log(req.body.cep, 'cep aqui')
 })
 
 app.listen(3000, () => {
