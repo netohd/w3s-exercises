@@ -7,6 +7,6 @@ export const router = express.Router()
 router.get('/', homePage)
 router.get('/contato', contactPage)
 
-router.post('/', (req, res) => {
-    console.log(req.body.cep, 'cep aqui')
-})
+// router.post('/', (req, res) => {
+//     console.log(req.body.cep, 'cep aqui')
+// })
